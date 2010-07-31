@@ -1,0 +1,8 @@
+*.user
+*.suo
+*.cache
+_ReSharper.*
+bin
+obj
+Raven.Server
+*.vs10x

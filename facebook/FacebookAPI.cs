@@ -74,6 +74,16 @@ namespace Facebook
         /// </summary>
         /// <param name="relativePath">The path for the call,
         /// e.g. /username</param>
+        public dynamic GetDynamic(string relativePath)
+        {
+            return new DynamicJSONObject(Get(relativePath));
+        }
+
+        /// <summary>
+        /// Makes a Facebook Graph API GET request.
+        /// </summary>
+        /// <param name="relativePath">The path for the call,
+        /// e.g. /username</param>
         /// <param name="args">A dictionary of key/value pairs that
         /// will get passed as query arguments.</param>
         public JSONObject Get(string relativePath, 
